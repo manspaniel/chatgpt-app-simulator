@@ -53,9 +53,11 @@ export function AppDisplay({ onAction, jsxCode }: Props) {
             e.preventDefault();
             const form = e.currentTarget.closest("form");
             if (form) {
-              submitForm(form, e.currentTarget.textContent!);
+              submitForm(form, e.currentTarget.textContent?.trim()!);
             } else {
-              onAction(`User clicked button "${e.currentTarget.textContent}"`);
+              onAction(
+                `User clicked button "${e.currentTarget.textContent?.trim()}"`
+              );
             }
           }}
         />
