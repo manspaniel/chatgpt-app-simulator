@@ -1,5 +1,7 @@
 # 🤖 ChatGPT App Simulator 👨‍💻
 
+[Try it here](https://chatgpt-app-simulator-production.up.railway.app/), while you can!
+
 ## What is this?
 
 ChatGPT has this seemingly magical ability to simulate environments both virtual and physical, based on a carefully worded prompt — programming languages, your own house, linux terminals, a popular book or movie. I think we can all agree, it's pretty wild!
