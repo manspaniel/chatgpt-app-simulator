@@ -51,14 +51,37 @@ export function AppDisplay({ onAction, jsxCode }: Props) {
           {...props}
           onClick={(e) => {
             e.preventDefault();
-            const form = e.currentTarget.closest("form");
+            const button = e.currentTarget;
+            const form = button.closest("form");
+            const buttonName = button.name || button.textContent?.trim();
             if (form) {
-              submitForm(form, e.currentTarget.textContent?.trim()!);
+              submitForm(form, buttonName!);
             } else {
-              onAction(
-                `User clicked button "${e.currentTarget.textContent?.trim()}"`
-              );
+              onAction(`User clicked button "${buttonName}"`);
             }
+          }}
+        />
+      );
+    },
+    [onAction]
+  );
+
+  const link = useMemo(
+    () => (props: any) => {
+      return (
+        <a
+          {...props}
+          onClick={(e) => {
+            e.preventDefault();
+            const link = e.currentTarget;
+            const linkText = link.textContent?.trim() ?? "";
+            const linkURL = link.getAttribute("href");
+            onAction(
+              `User clicked link with href "${linkURL}"` +
+                (linkText.length > 0 && linkText.length < 20
+                  ? ` and text "${linkText}"`
+                  : "")
+            );
           }}
         />
       );
@@ -90,6 +113,7 @@ export function AppDisplay({ onAction, jsxCode }: Props) {
         components={{
           button,
           form,
+          a: link,
         }}
       />
     </Wrapper>

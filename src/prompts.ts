@@ -1,12 +1,26 @@
 export const EXAMPLES = {
+  // Tic tac toe example
   "Tic-Tac-Toe": `
-    The application will be a tic-tac-toe game, where there is a grid of buttons, which will contain 0 or X. The app should be initialized with a blank slate. Whenever the user clicks a button, the AI will take a turn and the board will update.
-  `,
-  Calculator: `The application will be a simple calculator app, with section across the top to show the current input and output, and a grid of numbers, and some basic math operations. Also include an equals button for completing the operation. When users click the equals button, the app should display the result of the operation.`,
-  "Text Adventure Game": `The application should be a multiple choice text-adventure game of Lord of the Rings: The Fellowship of the Ring. You will present a short description of the scene, and then 4 options that the user can take to progress the story.
+    The application will be a tic-tac-toe game, where there is a grid of buttons, which will contain 0 or X. The app should be initialized with a blank slate.  Each button should have a 'name' attribute to with it's grid coordinates.
 
-The game starts in bag end, with Gandalf coming to see Frodo and Bilbo. The game recounts the story of the fellowship of the ring, and includes dialogue in the style of Tolkien.`,
-  "Search Engine": `The application is a search engine similar to Google, with a text input (with name attribute "query") and a submit button, wrapped in a form element. When the user types something in, display results related to their query — with a title, description and URL. It should look like Google. Use Tailwind styling.`,
+    Whenever the user clicks a button, take your turn.
+  `,
+
+  // Calculator example
+  Calculator: `
+    The application will be a simple calculator app, with section across the top to show the current input and output, and a grid of numbers, and some basic math operations. Also include an equals button for completing the operation. When users click the equals button, the app should display the result of the operation.
+  `,
+
+  // Text adventure game
+  "Text Adventure Game": `
+    The application should be a multiple choice text-adventure game of Lord of the Rings: The Fellowship of the Ring. You will present a short description of the scene, and then 4 options that the user can take to progress the story.
+
+    The game starts in bag end, with Gandalf coming to see Frodo and Bilbo. The game recounts the story of the fellowship of the ring, and includes dialogue in the style of Tolkien.`,
+
+  // Search engine
+  "Search Engine": `
+    The application is a search engine similar to Google, with a text input (with name attribute "query") and a submit button, wrapped in a form element. When the user types something in, display results related to their query — with a title, description and URL. It should look like Google. Use Tailwind styling.
+  `,
 };
 
 export const MECHANICS_DESCRIPTION = `
