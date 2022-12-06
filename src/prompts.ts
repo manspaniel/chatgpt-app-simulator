@@ -33,9 +33,7 @@ I want you to simulate a React application, using Tailwind for styling.
 
 [APP_DESCRIPTION]
 
-I will type user actions such as “User clicked button A” and you will reply with the updated JSX code. I want you to only reply with the output JSX inside one unique code block, and nothing else. Do not write explanations. Do not type actions unless I instruct you to do so. Do not include event handlers, or any JavaScript expressions other than pure JSX.
-
-All inputs should have an appropriate \`name\` attribute, instead of \`id\`.
+I will type user actions such as “User clicked button A” and you will reply with the updated JSX code. I want you to only reply with the output JSX inside one unique code block, and nothing else. Do not write explanations. Do not type actions unless I instruct you to do so. Do not include event handlers, or any JavaScript expressions other than pure JSX. Use 'name' attributes for inputs. Do not include component functions, or any other code other than the JSX output.
 
 Present the JSX now.
 `;
