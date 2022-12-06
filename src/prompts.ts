@@ -1,7 +1,7 @@
 export const EXAMPLES = {
   // Calculator example
   Calculator: `
-    The application will be a simple calculator app, with section across the top to show the current input and output, and a grid of numbers, and some basic math operations. Also include an equals button for completing the operation. When users click the equals button, the app should display the result of the operation.
+  The application will be a simple calculator app, with section across the top to show the current input and output, and a grid of numbers, and some basic math operations. Also include an equals button for completing the operation. When users click the equals button, the app should display the result of the operation. The app should use minimal and functional Tailwind styling.
   `,
 
   // Text adventure game

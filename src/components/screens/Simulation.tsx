@@ -331,4 +331,7 @@ const CloseSidebar = styled("div", {
       stroke: "$buttonBG !important",
     },
   },
+  "@tablet": {
+    display: "none",
+  },
 });
