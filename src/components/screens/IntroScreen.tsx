@@ -10,7 +10,7 @@ export default function IntroScreen() {
       <Inner>
         <VStack gap="md">
           <Heading size="lg" as="h1">
-            Welcome!
+            ChatGPT App Simulator
           </Heading>
           <SessionSettings />
           <DefineApp />
